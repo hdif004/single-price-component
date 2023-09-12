@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v30/qkBIXvYC6trAT55ZBi1ueQVIjQTD-JqqFA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v30/qkBIXvYC6trAT55ZBi1ueQVIjQTDH52qFA.ttf) format('truetype');
+}
+body {
+  background-color: hsl(204, 43%, 93%);
+  font-family: 'Karla', sans-serif;
+}
+.card {
+  border-radius: 10px;
+  width: 40%;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  margin: 100px auto;
+}
+.card .container {
+  display: flex;
+  flex-direction: row;
+}
+.card .community {
+  padding: 10px 20px;
+}
+.card .community h1 {
+  color: hsl(179, 62%, 43%);
+  margin: 20px 0;
+  font-size: 34px;
+}
+.card .community h2 {
+  font-size: 28px;
+  color: hsl(71, 73%, 54%);
+}
+.card .community p {
+  font-size: 16px;
+  color: hsl(218, 22%, 67%);
+}
+.card .container {
+  width: 100%;
+  color: white;
+}
+.card .container .subs {
+  width: 50%;
+  padding: 0 20px;
+  background-color: hsl(179, 60%, 31%);
+  border-bottom-left-radius: 10px;
+}
+.card .container .subs h2 {
+  font-size: 18px;
+}
+.card .container .subs h1 span {
+  color: hsl(218, 22%, 67%);
+  font-size: 16px;
+}
+.card .container .subs button {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  color: white;
+  background-color: hsl(71, 73%, 54%);
+  box-shadow: 2px 14px 58px black;
+}
+.card .container .why {
+  width: 50%;
+  padding: 0 20px;
+  background-color: hsl(179, 62%, 43%);
+  border-bottom-right-radius: 10px;
+}
+.card .container .why ul li {
+  list-style-type: none;
+}
+.card .container .why h2 {
+  margin-left: 30px;
+}
+@media screen and (max-width: 810px) {
+  .card {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .card .container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .subs {
+    width: 90%!important;
+    border-radius: 0 !important;
+  }
+  .subs button {
+    margin-bottom: 30px;
+  }
+  .why {
+    width: 90%!important;
+    border-radius: 0 !important;
+  }
+}
